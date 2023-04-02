@@ -1,0 +1,48 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: calc(50% - 1rem);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.flex-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.flex-item h3 {
+  margin: 0;
+}
+.flex-item h2 {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+}
+form label {
+  margin-top: 10px;
+}
+form button {
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=calendario.css.map */

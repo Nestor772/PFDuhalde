@@ -1,0 +1,11 @@
+.cabecera {
+  background-color: cornsilk;
+  height: 120px;
+  position: sticky;
+  top: 0px;
+}
+.cabecera img {
+  padding: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

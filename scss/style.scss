@@ -1,0 +1,13 @@
+$zero-value: 0px;
+$color-principal: cornsilk;
+
+.cabecera {
+	background-color: $color-principal;
+	height: 120px;
+	position: sticky;
+	top: $zero-value;
+
+    img {
+        padding: $zero-value;
+    }
+}

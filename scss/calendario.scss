@@ -1,0 +1,71 @@
+// Variables
+$margin-bottom: 2rem;
+$border-color: #ccc;
+$background-color: #f2f2f2;
+$font-weight-bold: bold;
+
+// Mixins
+@mixin flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin flex-item {
+  width: calc(50% - 1rem);
+  margin-bottom: $margin-bottom;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+// Styles
+.flex-container {
+  @include flex-container;
+}
+
+.flex-item {
+  @include flex-item;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0.5rem;
+    border: 1px solid $border-color;
+  }
+
+  th {
+    background-color: $background-color;
+    font-weight: $font-weight-bold;
+  }
+}
+
+form {
+    input {
+        width: 100%;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 15px;
+    }
+}

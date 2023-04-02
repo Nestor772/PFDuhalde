@@ -1,82 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Imágines</title>
-    <link rel="stylesheet" href="../css/estilo.css" />
-    <style>
-      header nav {
-        color: rgb(10, 0, 0);
-      }
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
-      header nav ul li a {
-        color: rgb(66, 62, 54);
-      }
-    </style>
+    <title>Imagenes</title>
   </head>
   <body>
-    <!-- inicio encabezado -->
-    <header class="cabecera">
-      <!-- logo -->
-      <img
-        id="top"
-        src="../assets/img/logo.png"
-        alt="logo sitio"
-        height="80"
-        width="80"
-      />
-      <!-- fin logo -->
-      <!-- inicio nav -->
-      <nav>
-        <ul class="menu">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li>Imágenes</li>
-          <li><a href="reglamento.html">Reglamento</a></li>
-          <li><a href="bootstrap.html">Bootstrap</a></li>
-          <li><a href="flex.html">Flex</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+    <!-- inicio Barra de navegación -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">Greenfutbol</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="imagenes.html">Imágenes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="programa.html">Programa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calendario.html">Calendario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ranking.html">Ranking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reglas.html">Reglas</a>
+          </li>
         </ul>
-      </nav>
-      <!-- fin nav -->
-    </header>
-    <!-- fin encabezado -->
-
-    <!-- inicio tabla contenidos -->
-    <table>
-      <tr>
-        <td>
+      </div>
+    </nav>
+    <!-- fin Barra de navegación -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- logo -->
           <img
-            src="../assets/img/header5.jpg"
+            src="../assets/img/logo.png"
+            alt="logo sitio"
+            height="80"
+            width="80"
+          />
+          <!-- fin logo -->
+          <!-- inicio de texto -->
+          <h3>Bienvenidos al Llao Llao Resort Golf-Spa.</h3>
+          <p>
+            Es el hotel más exclusivo de la Patagonia argentina. Nuestro hotel
+            en Bariloche ofrece Studios y Suites con increíbles vistas hacia
+            lagos, bosques y montañas. Una magnífica piscina indoor/outdoor,
+            campo de golf, un sorprendente Spa y actividades para adultos y
+            niños, son algunos de los servicios disponibles de nuestro Resort.
+            Enmarcado por los picos de los cerros López y Tronador y los lagos
+            Moreno y Nahuel Huapi, Llao Llao Resort Golf Spa cuenta con un gran
+            parque de 15 hectáreas integrado al campo de golf de 18 hoyos,
+            marina, playa, solarium, piscina climatizada interna y externa tipo
+            infinity, Spa y Health Club con sauna, Fitness Center y otras
+            actividades recreativas.
+          </p>
+          <!-- fin de texto -->
+        </div>
+        <!-- fotos del complejo Llao llao -->
+        <div class="col-md-6">
+          <img
+            src="../assets/img/greenfutbol_header2.jpg"
+            class="img-fluid"
+            alt="Imagen de ejemplo"
+          />
+        </div>
+        <div class="col-md-6" style="margin-top: 20px">
+          <img
+            src="../assets/img/greenfutbol_header3.jpg"
+            class="img-fluid"
+            alt="Imagen de ejemplo"
+          />
+        </div>
+        <div class="col-md-6" style="margin-top: 20px">
+          <img
+            src="../assets/img/greenfutbol_header10.jpg"
+            class="img-fluid"
+            alt="Imagen de ejemplo"
+          />
+        </div>
+        <!-- fin fotos del complejo Llao llao -->
+        <div style="margin-top: 20px">
+          <img
+            src="../assets/img/greenfutbol_header9.jpg"
             alt="horizonte atardecer"
             width="100%"
           />
-        </td>
-      </tr>
-      <tr>
-        <td><audio src="../assets/audio/audioBeat.mp3" controls></audio></td>
-      </tr>
-      <tr>
-        <td><h2>UBICACIÓN</h2></td>
-      </tr>
-      <tr>
-        <td>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.4382927519022!2d-71.53192127850407!3d-41.057628810857636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a886f9dea0175%3A0x3a42b93d77aef41f!2sLlao%20Llao%20Hotel%20%26%20Resort!5e0!3m2!1ses!2sar!4v1678036476898!5m2!1ses!2sar"
-            width="100%"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </td>
-      </tr>
-    </table>
-    <!-- fin tabla contenidos -->
-    <!-- inicio footer -->
-    <footer></footer>
-    <!-- fin footer -->
+        </div>
+
+        <h2 style="margin-top: 20px">UBICACIÓN</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.4382927519022!2d-71.53192127850407!3d-41.057628810857636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a886f9dea0175%3A0x3a42b93d77aef41f!2sLlao%20Llao%20Hotel%20%26%20Resort!5e0!3m2!1ses!2sar!4v1678036476898!5m2!1ses!2sar"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
